@@ -1,0 +1,59 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '../static/home.css' %}">
+    <title>UNIVERSITY MANAGEMENT SYSTEM</title>
+</head>
+<body>
+    {% block content %}
+    <div class="top">
+        <header>
+            <div class="linksall">
+                <ul>
+                    <li>
+                        <a href="{% static 'registration.html' %}">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/add-user-male--v1.png" alt="add-user-male--v1"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% static 'login.html' %}">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/50/login-rounded-right--v1.png" alt="login-rounded-right--v1"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="main">
+        <div class="homepic">
+            <img src="{% static 'stack-books.webp' %}" alt="books1">
+        </div>
+    </div>
+    <div class="bottom">
+        <footer>
+            <div class="footer1">
+                <h3>Terms & Conditions Apply &COPY; 2024</h3>
+                <div class="link3">
+                    <ul>
+                        <li>
+                            <a href="{% static '#twitter' %}">
+                                <img width="60" height="50" src="https://img.icons8.com/papercut/120/twitter.png" alt="twitter"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% static '#fb' %}">
+                                <img width="60" height="50" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook">
+                            </a>
+                        </li>
+                </div>
+            </div>
+        </footer>
+    </div>
+    {% endblock %}
+</body>
+</html>

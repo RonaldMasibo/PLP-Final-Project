@@ -1,0 +1,32 @@
+
+
+ul {
+    background-color: rgb(71, 56, 99);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    float: right;
+}
+
+footer {
+    background-color: rgb(71, 56, 99);
+    text-align: center;
+    overflow: hidden;
+    list-style-type: none;
+    color: white;
+}
+
+footer h3 {
+    margin: 0;
+    padding: 0px;
+}
+
+.footer1 {
+    display: inline;
+}
